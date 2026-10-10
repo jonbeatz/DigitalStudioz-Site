@@ -14,7 +14,7 @@
 
 **https://jonbeatz.github.io/DigitalStudioz-Site/**
 
-![DigitalStudioz agency hero — dark mode](media/hero/agency-v2-hero.jpg?v=202610101245)
+![DigitalStudioz agency hero — dark mode](media/hero/agency-v2-hero.jpg?v=202610101335)
 
 ## What's inside
 
@@ -64,7 +64,7 @@ Dark charcoal + signal red + warm gold. Big display type, hairline borders, soft
 
 ### Hero
 
-![Hero](media/hero/agency-v2-hero.jpg?v=202610101245)
+![Hero](media/hero/agency-v2-hero.jpg?v=202610101335)
 
 ### Services fan
 
@@ -76,7 +76,7 @@ Dark charcoal + signal red + warm gold. Big display type, hairline borders, soft
 
 ### Mobile
 
-![Mobile](media/hero/agency-v2-mobile.jpg?v=202610101245)
+![Mobile](media/hero/agency-v2-mobile.jpg?v=202610101335)
 
 ---
 
