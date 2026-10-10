@@ -598,4 +598,24 @@
     });
   })();
 
+
+  /* ---- scroll-linked marquee (v0 port) ---- */
+  (function(){
+    var track = document.getElementById('marqueeTrack');
+    if(!track) return;
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var raf = 0;
+    function update(){
+      raf = 0;
+      var half = track.scrollWidth / 2;
+      if(half <= 0) return;
+      var offset = (window.scrollY * 0.35) % half;
+      track.style.transform = 'translate3d(' + (-offset) + 'px,0,0)';
+    }
+    window.addEventListener('scroll', function(){
+      if(!raf) raf = requestAnimationFrame(update);
+    }, {passive:true});
+    update();
+  })();
+
 })();
