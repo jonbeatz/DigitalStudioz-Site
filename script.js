@@ -458,8 +458,48 @@
         { src:'assets/work-draw-tablet.jpg', alt:'Designing on a drawing tablet' }
       ],
       1: [
+        { src:'assets/work-wireframe-city.jpg', alt:'Wireframe layout over a city backdrop' },
+        { src:'assets/work-draw-tablet.jpg', alt:'Designing on a drawing tablet' },
+        { src:'assets/work-camera-desk.jpg', alt:'Camera and notebook on a desk' }
+      ],
+      2: [
+        { src:'assets/work-draw-tablet.jpg', alt:'Designing on a drawing tablet' },
+        { src:'assets/work-dual-monitor-edit.jpg', alt:'Editing a site across dual monitors' },
+        { src:'assets/work-headphones-desk.jpg', alt:'Headphones resting on a desk' }
+      ],
+      3: [
+        { src:'assets/work-dual-monitor-edit.jpg', alt:'Editing a site across dual monitors' },
+        { src:'assets/work-office-city.jpg', alt:'Office desk with a city view' },
+        { src:'assets/work-night-office.jpg', alt:'Office glowing at night' }
+      ],
+      4: [
         { src:'assets/work-responsive-trio.jpg', alt:'Responsive website shown on three devices' },
         { src:'assets/work-dual-monitor-edit.jpg', alt:'Editing a site across dual monitors' },
+        { src:'assets/work-pc-tower.jpg', alt:'Workstation tower close-up' }
+      ],
+      5: [
+        { src:'assets/work-pc-tower.jpg', alt:'Workstation tower close-up' },
+        { src:'assets/work-night-office.jpg', alt:'Office glowing at night' },
+        { src:'assets/work-headphones-desk.jpg', alt:'Headphones resting on a desk' }
+      ],
+      6: [
+        { src:'assets/work-headphones-desk.jpg', alt:'Headphones resting on a desk' },
+        { src:'assets/work-pc-tower.jpg', alt:'Workstation tower close-up' },
+        { src:'assets/work-office-city.jpg', alt:'Office desk with a city view' }
+      ],
+      7: [
+        { src:'assets/work-camera-desk.jpg', alt:'Camera and notebook on a desk' },
+        { src:'assets/work-night-office.jpg', alt:'Office glowing at night' },
+        { src:'assets/work-draw-tablet.jpg', alt:'Designing on a drawing tablet' }
+      ],
+      8: [
+        { src:'assets/work-office-city.jpg', alt:'Office desk with a city view' },
+        { src:'assets/work-responsive-trio.jpg', alt:'Responsive website shown on three devices' },
+        { src:'assets/work-camera-desk.jpg', alt:'Camera and notebook on a desk' }
+      ],
+      9: [
+        { src:'assets/work-night-office.jpg', alt:'Office glowing at night' },
+        { src:'assets/work-wireframe-sketches.jpg', alt:'Website wireframe sketches on a desk' },
         { src:'assets/work-pc-tower.jpg', alt:'Workstation tower close-up' }
       ]
     };

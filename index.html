@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610101405">
+<link rel="stylesheet" href="style.css?v=202610101415">
 </head>
 <body>
 
@@ -345,11 +345,12 @@
     <div class="wrap">
       <p class="eyebrow"><span class="dot"></span>Selected work</p>
       <h2 class="sec-title">Proof, <span class="hl">not promises.</span></h2>
-      <p class="sec-lede">Two featured builds. Real numbers, real outcomes. <span class="draft-note">(Placeholder case studies — real client work lands here.)</span></p>
+      <p class="sec-lede">Ten sample builds. Real numbers, real outcomes. <span class="draft-note">(Placeholder case studies — real client work lands here.)</span></p>
       <div class="work-filters" role="group" aria-label="Filter case studies">
         <button type="button" class="wf-chip is-active" data-filter="all" aria-pressed="true">All</button>
         <button type="button" class="wf-chip" data-filter="redesign" aria-pressed="false">Redesign</button>
         <button type="button" class="wf-chip" data-filter="rescue" aria-pressed="false">Rescue &amp; rebuild</button>
+        <button type="button" class="wf-chip" data-filter="newbuild" aria-pressed="false">New build</button>
         <span class="wf-count" id="wfCount">02 case studies</span>
       </div>
       <div class="carousel" id="workCarousel">
@@ -368,13 +369,55 @@
             <li><strong>100</strong> Lighthouse across the board</li>
           </ul>
         </article>
-        <article class="case" data-case="1" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Professional practice, rescue and rebuild" data-desc="A professional practice stuck with a slow, fragile site. We audited what was there, kept what worked, and rebuilt the rest — launched in three weeks with zero downtime.">
+        <article class="case" data-case="1" data-cat="redesign" tabindex="0" role="button" aria-label="View case study: Neighborhood bakery, brand and site refresh" data-desc="A neighborhood bakery with a site older than its sourdough starter. New brand direction, online ordering front and center, and photos that finally look like the real thing.">
           <div class="case-media">
-            <img src="assets/work-responsive-trio.jpg" alt="Responsive website shown on three devices" loading="lazy">
+            <img src="assets/work-wireframe-city.jpg" alt="Wireframe layout over a city backdrop" loading="lazy">
             <span class="case-num">02</span>
           </div>
-          <h3>Professional practice — rescue &amp; rebuild</h3>
-          <p class="case-cat">Rescue &amp; rebuild</p>
+          <h3>Neighborhood bakery — brand & site refresh</h3>
+          <p class="case-cat">Redesign</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>+62%</strong> online orders in 60 days</li>
+            <li><strong>0.9s</strong> mobile load time</li>
+            <li><strong>3.4×</strong> catering quote requests</li>
+          </ul>
+        </article>
+        <article class="case" data-case="2" data-cat="redesign" tabindex="0" role="button" aria-label="View case study: Dental practice, patient-first redesign" data-desc="A dental practice losing new patients to a dated, confusing site. Rebuilt around one job: getting nervous patients to book — clear services, real reviews, two-tap booking.">
+          <div class="case-media">
+            <img src="assets/work-draw-tablet.jpg" alt="Designing on a drawing tablet" loading="lazy">
+            <span class="case-num">03</span>
+          </div>
+          <h3>Dental practice — patient-first redesign</h3>
+          <p class="case-cat">Redesign</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>+38%</strong> new-patient bookings</li>
+            <li><strong>52%</strong> fewer homepage bounces</li>
+            <li><strong>4.9★</strong> review widget front and center</li>
+          </ul>
+        </article>
+        <article class="case" data-case="3" data-cat="redesign" tabindex="0" role="button" aria-label="View case study: Boutique law office, trust-first redesign" data-desc="A boutique law office whose site read like a template. Rebuilt with editorial typography, attorney bios that feel human, and consultation CTAs on every practice page.">
+          <div class="case-media">
+            <img src="assets/work-dual-monitor-edit.jpg" alt="Editing a site across dual monitors" loading="lazy">
+            <span class="case-num">04</span>
+          </div>
+          <h3>Boutique law office — trust-first redesign</h3>
+          <p class="case-cat">Redesign</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>+47%</strong> consultation requests</li>
+            <li><strong>2.2×</strong> time on practice pages</li>
+            <li><strong>31</strong> five-star reviews surfaced</li>
+          </ul>
+        </article>
+        <article class="case" data-case="4" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Professional practice, rescue and rebuild" data-desc="A professional practice stuck with a slow, fragile site. We audited what was there, kept what worked, and rebuilt the rest — launched in three weeks with zero downtime.">
+          <div class="case-media">
+            <img src="assets/work-responsive-trio.jpg" alt="Responsive website shown on three devices" loading="lazy">
+            <span class="case-num">05</span>
+          </div>
+          <h3>Professional practice — rescue & rebuild</h3>
+          <p class="case-cat">Rescue & rebuild</p>
           <p class="case-tag" hidden>Featured</p>
           <ul class="case-outcomes" hidden>
             <li><strong>3 weeks</strong> from audit to launch</li>
@@ -382,7 +425,77 @@
             <li><strong>2.1×</strong> contact-form conversions</li>
           </ul>
         </article>
-        </div>
+        <article class="case" data-case="5" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Restaurant group, speed rescue" data-desc="Three restaurant sites sharing one bloated theme — 9-second loads, broken menus on phones. Stripped to a lean build, menus as real pages, reservations one tap away.">
+          <div class="case-media">
+            <img src="assets/work-pc-tower.jpg" alt="Workstation tower close-up" loading="lazy">
+            <span class="case-num">06</span>
+          </div>
+          <h3>Restaurant group — speed rescue</h3>
+          <p class="case-cat">Rescue & rebuild</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>1.1s</strong> mobile load, down from 9s</li>
+            <li><strong>+55%</strong> reservation clicks</li>
+            <li><strong>0</strong> broken menu pages</li>
+          </ul>
+        </article>
+        <article class="case" data-case="6" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Real estate team, plugin-hell rescue" data-desc="A real estate team running 47 plugins and a page builder held together with hope. Migrated listings to a clean build — same content, a tenth of the weight.">
+          <div class="case-media">
+            <img src="assets/work-headphones-desk.jpg" alt="Headphones resting on a desk" loading="lazy">
+            <span class="case-num">07</span>
+          </div>
+          <h3>Real estate team — plugin-hell rescue</h3>
+          <p class="case-cat">Rescue & rebuild</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>47→12</strong> plugins after cleanup</li>
+            <li><strong>1.6s</strong> listing page loads</li>
+            <li><strong>0</strong> white-screen Mondays</li>
+          </ul>
+        </article>
+        <article class="case" data-case="7" data-cat="newbuild" tabindex="0" role="button" aria-label="View case study: Coffee roaster, launch site" data-desc="A coffee roaster going from farmers-market stall to storefront. Launch site with the story up front, wholesale inquiries separated from retail, subscriptions from day one.">
+          <div class="case-media">
+            <img src="assets/work-camera-desk.jpg" alt="Camera and notebook on a desk" loading="lazy">
+            <span class="case-num">08</span>
+          </div>
+          <h3>Coffee roaster — launch site</h3>
+          <p class="case-cat">New build</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>18 days</strong> idea to launch</li>
+            <li><strong>214</strong> email signups in month one</li>
+            <li><strong>32</strong> wholesale inquiries</li>
+          </ul>
+        </article>
+        <article class="case" data-case="8" data-cat="newbuild" tabindex="0" role="button" aria-label="View case study: Fitness studio, booking-first build" data-desc="A fitness studio selling classes through DMs. New site built around the schedule — live class calendar, instant booking, intro offers that sell while the owner coaches.">
+          <div class="case-media">
+            <img src="assets/work-office-city.jpg" alt="Office desk with a city view" loading="lazy">
+            <span class="case-num">09</span>
+          </div>
+          <h3>Fitness studio — booking-first build</h3>
+          <p class="case-cat">New build</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>+71%</strong> trial bookings</li>
+            <li><strong>24/7</strong> booking without the DMs</li>
+            <li><strong>3.1×</strong> intro-offer redemptions</li>
+          </ul>
+        </article>
+        <article class="case" data-case="9" data-cat="newbuild" tabindex="0" role="button" aria-label="View case study: Pet groomer, local SEO build" data-desc="A pet groomer invisible on local search. New site with service-area pages, review funnel, and before/after galleries — built to rank for every neighborhood served.">
+          <div class="case-media">
+            <img src="assets/work-night-office.jpg" alt="Office glowing at night" loading="lazy">
+            <span class="case-num">10</span>
+          </div>
+          <h3>Pet groomer — local SEO build</h3>
+          <p class="case-cat">New build</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
+            <li><strong>#1</strong> map pack for 4 service areas</li>
+            <li><strong>+89%</strong> calls from search</li>
+            <li><strong>120+</strong> reviews collected</li>
+          </ul>
+        </article>
+
       </div>
       <div class="carousel-bar">
         <div class="carousel-progress" aria-hidden="true"><span id="workProgress"></span></div>
@@ -551,6 +664,6 @@
   </div>
 </div>
 
-<script src="script.js?v=202610101405"></script>
+<script src="script.js?v=202610101415"></script>
 </body>
 </html>
