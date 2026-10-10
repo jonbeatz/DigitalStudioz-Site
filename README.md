@@ -1,12 +1,12 @@
 # DigitalStudioz — Agency Site
 
-**Branch policy:** work happens on the latest *-vN / project branch. List branches before editing. Never assume the GitHub default is the working line. Working line: `digitalstudioz-site-v1` (GitHub default is `main`).
+**Branch policy:** work happens on the latest *-vN / project branch. List branches before editing. Never assume the GitHub default is the working line. Working line: `digitalstudioz-site-v2` (GitHub default is `main`).
 
 > Custom WordPress sites for small businesses. Built to convert. The agency arm of the Jon-Beatz.com trio — design, dev, and coding for clients, shipped on the MyVizionStudio theme engine.
 
 [![Live preview](https://img.shields.io/badge/preview-live-e0232a)](https://jonbeatz.github.io/DigitalStudioz-Site/)
 [![Static site](https://img.shields.io/badge/site-static-181717?logo=google-chrome)](https://jonbeatz.github.io/DigitalStudioz-Site/)
-[![Branch](https://img.shields.io/badge/branch-digitalstudioz--site--v1-e0232a)](https://github.com/jonbeatz/DigitalStudioz-Site/tree/digitalstudioz-site-v1)
+[![Branch](https://img.shields.io/badge/branch-digitalstudioz--site--v2-e0232a)](https://github.com/jonbeatz/DigitalStudioz-Site/tree/digitalstudioz-site-v2)
 [![Status](https://img.shields.io/badge/status-in%20progress-yellow)](#screenshots)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -14,7 +14,7 @@
 
 **https://jonbeatz.github.io/DigitalStudioz-Site/**
 
-![DigitalStudioz agency hero — dark mode](media/hero/agency-v2-hero.jpg?v=202610081700)
+![DigitalStudioz agency hero — dark mode](media/hero/agency-v2-hero.jpg?v=202610101245)
 
 ## What's inside
 
@@ -64,19 +64,19 @@ Dark charcoal + signal red + warm gold. Big display type, hairline borders, soft
 
 ### Hero
 
-![Hero](media/hero/agency-v2-hero.jpg?v=202610081700)
+![Hero](media/hero/agency-v2-hero.jpg?v=202610101245)
 
 ### Services fan
 
-![Services fan](media/hero/agency-v2-services.jpg?v=202610081700)
+![Services fan](media/hero/agency-v2-services.jpg?v=202610101245)
 
 ### Pricing
 
-![Pricing](media/hero/agency-v2-pricing.jpg?v=202610081700)
+![Pricing](media/hero/agency-v2-pricing.jpg?v=202610101245)
 
 ### Mobile
 
-![Mobile](media/hero/agency-v2-mobile.jpg?v=202610081700)
+![Mobile](media/hero/agency-v2-mobile.jpg?v=202610101245)
 
 ---
 
