@@ -671,7 +671,8 @@
       var slides = visibleSlides();
       if(!slides.length) return;
       var i = Math.min(slides.length - 1, Math.max(0, currentIndex(slides) + dir));
-      slides[i].scrollIntoView({behavior: 'smooth', inline: 'start', block: 'nearest'});
+      /* scroll the strip only -- never the page (scrollIntoView jumps the page on iOS) */
+      car.scrollTo({left: slides[i].offsetLeft, behavior: 'smooth'});
     }
     function update(){
       var max = car.scrollWidth - car.clientWidth;
