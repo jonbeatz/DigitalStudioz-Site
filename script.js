@@ -637,9 +637,21 @@
         return el.style.display !== 'none';
       });
     }
-    function step(){
-      var s = visibleSlides()[0];
-      return s ? s.getBoundingClientRect().width + 24 : 320;
+    function currentIndex(slides){
+      var mid = car.scrollLeft + car.clientWidth / 2;
+      var best = 0, bestD = Infinity;
+      for(var k = 0; k < slides.length; k++){
+        var c = slides[k].offsetLeft + slides[k].offsetWidth / 2;
+        var d = Math.abs(c - mid);
+        if(d < bestD){ bestD = d; best = k; }
+      }
+      return best;
+    }
+    function go(dir){
+      var slides = visibleSlides();
+      if(!slides.length) return;
+      var i = Math.min(slides.length - 1, Math.max(0, currentIndex(slides) + dir));
+      slides[i].scrollIntoView({behavior: 'smooth', inline: 'start', block: 'nearest'});
     }
     function update(){
       var max = car.scrollWidth - car.clientWidth;
@@ -649,8 +661,8 @@
       if(prev) prev.disabled = car.scrollLeft <= 4;
       if(next) next.disabled = max > 0 && car.scrollLeft >= max - 4;
     }
-    if(prev) prev.addEventListener('click', function(){ car.scrollBy({left: -step(), behavior: 'smooth'}); });
-    if(next) next.addEventListener('click', function(){ car.scrollBy({left: step(), behavior: 'smooth'}); });
+    if(prev) prev.addEventListener('click', function(){ go(-1); });
+    if(next) next.addEventListener('click', function(){ go(1); });
     var raf = 0;
     car.addEventListener('scroll', function(){
       if(!raf) raf = requestAnimationFrame(function(){ raf = 0; update(); });

@@ -385,10 +385,10 @@ body.menu-open .site-header .header-cta .btn{display:none}
 .diff-close strong{color:var(--red-bright)}
 
 /* case studies carousel */
-.carousel{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;
-  margin:0 -28px;padding:4px 28px 8px}
+.carousel{overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-ms-overflow-style:none;
+  margin:0 -28px;padding:4px 28px 8px;scroll-padding-left:28px}
 .carousel::-webkit-scrollbar{display:none}
-.carousel-track{display:flex;gap:24px;width:max-content}
+.carousel-track{display:flex;gap:24px;width:max-content;position:relative}
 .case{flex:0 0 clamp(300px,40vw,460px);scroll-snap-align:start;cursor:pointer;position:relative}
 .case[hidden]{display:none}
 .case .case-tag[hidden],.case .case-outcomes[hidden]{display:none}
@@ -657,7 +657,7 @@ body.menu-open .site-header .header-cta .btn{display:none}
 .lb-thumbs button.is-active{opacity:1;border-color:var(--gold)}
 @media (max-width:48rem){
   .case{flex-basis:min(78vw,340px)}
-  .carousel{margin:0 -20px;padding:4px 20px 8px}
+  .carousel{margin:0 -20px;padding:4px 20px 8px;scroll-padding-left:20px}
   .lb-body{grid-template-columns:1fr}
   .lb-fig img{max-height:46vh}
   .hero-channels{left:12px;right:12px;transform:none;flex-wrap:wrap;justify-content:center}
