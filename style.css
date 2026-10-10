@@ -672,16 +672,4 @@ body.menu-open .site-header .header-cta .btn{display:none}
   .hch.is-active .hch-status i{animation:none}
 }
 
-/* scroll-linked marquee band (v0 port) */
-.marquee{overflow:hidden;border-top:1px solid rgba(200,22,32,.5);border-bottom:1px solid rgba(200,22,32,.5);
-  background:#0b0c0e;padding:1.1rem 0;transform:rotate(-1deg) scale(1.02);margin:2.5rem 0}
-.marquee-track{display:flex;width:max-content;white-space:nowrap;will-change:transform;align-items:center}
-.marquee-group{display:flex;align-items:center}
-.marquee-group span{margin:0 1.4rem}
-.mq-solid{font-weight:800;font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:.02em;text-transform:uppercase;color:#fff}
-.mq-outline{font-weight:800;font-size:clamp(1.4rem,3vw,2.2rem);letter-spacing:.02em;text-transform:uppercase;
-  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.55)}
-.mq-star{color:var(--gold);font-size:1.2rem}
-@media (prefers-reduced-motion:reduce){
-  .marquee-track{transform:none !important}
 }
