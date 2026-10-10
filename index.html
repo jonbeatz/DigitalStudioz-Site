@@ -99,6 +99,7 @@
       <div class="hero-bg-slide"><img src="assets/hero-design-desk.jpg" alt=""></div>
       <div class="hero-bg-slide"><img src="assets/hero-video-switcher.jpg" alt=""></div>
       <div class="hero-bg-scrim"></div>
+      <div class="hero-bg-dip" aria-hidden="true"></div>
     </div>
     <div class="hero-grid">
       <div class="hero-copy">
@@ -149,11 +150,72 @@
         </div>
       </div>
     </div>
-    <div class="hero-bg-dots" role="tablist" aria-label="Hero background images">
-      <button class="hb-dot is-active" role="tab" aria-selected="true" aria-label="Background image 1"></button>
-      <button class="hb-dot" role="tab" aria-selected="false" aria-label="Background image 2"></button>
-      <button class="hb-dot" role="tab" aria-selected="false" aria-label="Background image 3"></button>
-      <button class="hb-dot" role="tab" aria-selected="false" aria-label="Background image 4"></button>
+    <div class="hero-channels" role="tablist" aria-label="Hero background images">
+      <button class="hch is-active" role="tab" aria-selected="true" aria-label="Background 1: Studio">
+        <span class="hch-row"><span class="hch-num">01</span><span class="hch-total">/ 04</span></span>
+        <span class="hch-status"><i aria-hidden="true"></i><b>Live</b></span>
+        <span class="hch-label">Studio</span>
+        <span class="hch-progress" aria-hidden="true"><span></span></span>
+      </button>
+      <button class="hch" role="tab" aria-selected="false" aria-label="Background 2: Build">
+        <span class="hch-row"><span class="hch-num">02</span><span class="hch-total">/ 04</span></span>
+        <span class="hch-status"><i aria-hidden="true"></i><b>Cue</b></span>
+        <span class="hch-label">Build</span>
+        <span class="hch-progress" aria-hidden="true"><span></span></span>
+      </button>
+      <button class="hch" role="tab" aria-selected="false" aria-label="Background 3: Design">
+        <span class="hch-row"><span class="hch-num">03</span><span class="hch-total">/ 04</span></span>
+        <span class="hch-status"><i aria-hidden="true"></i><b>Cue</b></span>
+        <span class="hch-label">Design</span>
+        <span class="hch-progress" aria-hidden="true"><span></span></span>
+      </button>
+      <button class="hch" role="tab" aria-selected="false" aria-label="Background 4: Broadcast">
+        <span class="hch-row"><span class="hch-num">04</span><span class="hch-total">/ 04</span></span>
+        <span class="hch-status"><i aria-hidden="true"></i><b>Cue</b></span>
+        <span class="hch-label">Broadcast</span>
+        <span class="hch-progress" aria-hidden="true"><span></span></span>
+      </button>
+      <button class="hch-gear" id="heroSettingsBtn" aria-label="Backdrop settings" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 1 1-4 0v-.09a1.7 1.7 0 0 0-1.04-1.56 1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.65 8.9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.87.34h.01A1.7 1.7 0 0 0 10.06 3V3a2 2 0 1 1 4 0v.09c0 .68.4 1.3 1.04 1.56.6.26 1.3.13 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.34 1.87v.01c.26.6.88 1.04 1.56 1.04H21a2 2 0 1 1 0 4h-.09c-.68 0-1.3.4-1.51 1.04z"/></svg>
+      </button>
+    </div>
+    <div class="hero-settings" id="heroSettings" hidden>
+      <p class="hs-title">Backdrop settings</p>
+      <div class="hs-group">
+        <p id="hsTransLabel">Transition</p>
+        <div class="hs-pills" id="hsTrans" role="group" aria-labelledby="hsTransLabel">
+          <button type="button" data-v="fade" class="is-active">Cross fade</button>
+          <button type="button" data-v="slide">Slide</button>
+          <button type="button" data-v="dip">Dip to black</button>
+        </div>
+      </div>
+      <div class="hs-group">
+        <p id="hsKbLabel">Ken Burns zoom</p>
+        <div class="hs-pills" id="hsKb" role="group" aria-labelledby="hsKbLabel">
+          <button type="button" data-v="on" class="is-active">On</button>
+          <button type="button" data-v="off">Off</button>
+        </div>
+      </div>
+      <div class="hs-group">
+        <p id="hsAutoLabel">Autoplay</p>
+        <div class="hs-pills" id="hsAuto" role="group" aria-labelledby="hsAutoLabel">
+          <button type="button" data-v="on" class="is-active">On</button>
+          <button type="button" data-v="off">Off</button>
+        </div>
+      </div>
+      <div class="hs-group">
+        <p>Duration — <span id="hsSecs">6s</span></p>
+        <div class="hs-speed">
+          <button type="button" id="hsSlower" aria-label="Shorter duration">&minus;</button>
+          <input type="range" id="hsRange" min="2" max="15" step="1" value="6" aria-label="Seconds per backdrop">
+          <button type="button" id="hsFaster" aria-label="Longer duration">+</button>
+        </div>
+        <div class="hs-pills" id="hsPreset">
+          <button type="button" data-v="9">Slow</button>
+          <button type="button" data-v="6" class="is-active">Normal</button>
+          <button type="button" data-v="3">Fast</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -265,8 +327,14 @@
       <p class="eyebrow"><span class="dot"></span>Selected work</p>
       <h2 class="sec-title">Proof, <span class="hl">not promises.</span></h2>
       <p class="sec-lede">Two featured builds. Real numbers, real outcomes. <span class="draft-note">(Placeholder case studies — real client work lands here.)</span></p>
+      <div class="work-filters" role="group" aria-label="Filter case studies">
+        <button type="button" class="wf-chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="wf-chip" data-filter="redesign" aria-pressed="false">Redesign</button>
+        <button type="button" class="wf-chip" data-filter="rescue" aria-pressed="false">Rescue &amp; rebuild</button>
+        <span class="wf-count" id="wfCount">02 case studies</span>
+      </div>
       <div class="cases">
-        <article class="case">
+        <article class="case" data-case="0" data-cat="redesign" tabindex="0" role="button" aria-label="View case study: Local services company, full redesign" data-desc="A local services company came to us with a site that didn’t sell. We rebuilt it end to end — structure, copy direction, and a fresh theme on the MyVizionStudio engine.">
           <p class="case-tag">Featured</p>
           <div class="case-visual" aria-hidden="true">
             <div class="cv-before"><span>Before</span><div class="cv-shot old"></div></div>
@@ -279,8 +347,9 @@
             <li><strong>100</strong> Lighthouse across the board</li>
           </ul>
           <p class="case-quote">&ldquo;Our website finally sells as hard as we do.&rdquo; <span>— Owner, placeholder testimonial</span></p>
+          <p class="case-open" aria-hidden="true"><span>View case</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
         </article>
-        <article class="case">
+        <article class="case" data-case="1" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Professional practice, rescue and rebuild" data-desc="A professional practice stuck with a slow, fragile site. We audited what was there, kept what worked, and rebuilt the rest — launched in three weeks with zero downtime.">
           <div class="case-visual" aria-hidden="true">
             <div class="cv-before"><span>Before</span><div class="cv-shot old"></div></div>
             <div class="cv-after"><span>After</span><div class="cv-shot new"></div></div>
@@ -292,6 +361,7 @@
             <li><strong>2.1&times;</strong> contact-form conversions</li>
           </ul>
           <p class="case-quote">&ldquo;It felt like hiring a whole web department.&rdquo; <span>— Principal, placeholder testimonial</span></p>
+          <p class="case-open" aria-hidden="true"><span>View case</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
         </article>
       </div>
     </div>
@@ -420,6 +490,35 @@
 <button class="to-top" id="toTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
 </button>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle" hidden>
+  <div class="lb-top">
+    <span class="lb-count" id="lbCount">01 / 02</span>
+    <button class="lb-close" id="lbClose" aria-label="Close case viewer">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="lb-body" id="lbBody">
+    <div class="lb-stage">
+      <figure class="lb-fig"><img id="lbImg" src="" alt=""></figure>
+      <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Previous case">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="lb-arrow lb-next" id="lbNext" aria-label="Next case">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="lb-meta">
+      <p class="lb-crumb" id="lbCrumb"></p>
+      <h3 id="lbTitle"></h3>
+      <p class="lb-desc" id="lbDesc"></p>
+      <div class="lb-outcomes" id="lbOutcomes"></div>
+      <a class="btn btn-primary btn-sm" href="#contact" id="lbCta">Start a project</a>
+      <p class="lb-views" id="lbViewsLabel"></p>
+      <div class="lb-thumbs" id="lbThumbs"></div>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
