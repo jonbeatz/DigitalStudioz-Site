@@ -494,6 +494,11 @@
         if(match) shown++;
       });
       if(count) count.textContent = pad2(shown) + (shown === 1 ? ' case study' : ' case studies');
+      var car = document.getElementById('workCarousel');
+      if(car){
+        car.scrollTo({left: 0});
+        if(car._carouselUpdate) setTimeout(car._carouselUpdate, 60);
+      }
     }
     chips.forEach(function(chip){
       chip.addEventListener('click', function(){
@@ -615,6 +620,43 @@
     window.addEventListener('scroll', function(){
       if(!raf) raf = requestAnimationFrame(update);
     }, {passive:true});
+    update();
+  })();
+
+
+  /* ---- works carousel: arrows + timeline progress ---- */
+  (function(){
+    var car = document.getElementById('workCarousel');
+    var track = document.getElementById('workTrack');
+    var prog = document.getElementById('workProgress');
+    var prev = document.getElementById('workPrev');
+    var next = document.getElementById('workNext');
+    if(!car || !track) return;
+    function visibleSlides(){
+      return Array.prototype.filter.call(track.children, function(el){
+        return el.style.display !== 'none';
+      });
+    }
+    function step(){
+      var s = visibleSlides()[0];
+      return s ? s.getBoundingClientRect().width + 24 : 320;
+    }
+    function update(){
+      var max = car.scrollWidth - car.clientWidth;
+      var p = max > 0 ? car.scrollLeft / max : 0;
+      p = Math.min(1, Math.max(0, p));
+      if(prog) prog.style.width = Math.max(8, Math.round(p * 100)) + '%';
+      if(prev) prev.disabled = car.scrollLeft <= 4;
+      if(next) next.disabled = max > 0 && car.scrollLeft >= max - 4;
+    }
+    if(prev) prev.addEventListener('click', function(){ car.scrollBy({left: -step(), behavior: 'smooth'}); });
+    if(next) next.addEventListener('click', function(){ car.scrollBy({left: step(), behavior: 'smooth'}); });
+    var raf = 0;
+    car.addEventListener('scroll', function(){
+      if(!raf) raf = requestAnimationFrame(function(){ raf = 0; update(); });
+    }, {passive:true});
+    window.addEventListener('resize', update);
+    car._carouselUpdate = update;
     update();
   })();
 
