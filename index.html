@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=202610101350">
+<link rel="stylesheet" href="style.css?v=202610101355">
 </head>
 <body>
 
@@ -352,36 +352,48 @@
         <button type="button" class="wf-chip" data-filter="rescue" aria-pressed="false">Rescue &amp; rebuild</button>
         <span class="wf-count" id="wfCount">02 case studies</span>
       </div>
-      <div class="cases">
+      <div class="carousel" id="workCarousel">
+        <div class="carousel-track" id="workTrack">
         <article class="case" data-case="0" data-cat="redesign" tabindex="0" role="button" aria-label="View case study: Local services company, full redesign" data-desc="A local services company came to us with a site that didn’t sell. We rebuilt it end to end — structure, copy direction, and a fresh theme on the MyVizionStudio engine.">
-          <p class="case-tag">Featured</p>
-          <div class="case-visual" aria-hidden="true">
-            <div class="cv-before"><span>Before</span><div class="cv-shot old"></div></div>
-            <div class="cv-after"><span>After</span><div class="cv-shot new"></div></div>
+          <div class="case-media">
+            <img src="assets/work-wireframe-sketches.jpg" alt="Website wireframe sketches on a desk" loading="lazy">
+            <span class="case-num">01</span>
           </div>
           <h3>Local services company — full redesign</h3>
-          <ul class="case-outcomes">
+          <p class="case-cat">Redesign</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
             <li><strong>+40%</strong> quote requests in 90 days</li>
             <li><strong>1.4s</strong> mobile load time, down from 6.8s</li>
             <li><strong>100</strong> Lighthouse across the board</li>
           </ul>
-          <p class="case-quote">&ldquo;Our website finally sells as hard as we do.&rdquo; <span>— Owner, placeholder testimonial</span></p>
-          <p class="case-open" aria-hidden="true"><span>View case</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
         </article>
         <article class="case" data-case="1" data-cat="rescue" tabindex="0" role="button" aria-label="View case study: Professional practice, rescue and rebuild" data-desc="A professional practice stuck with a slow, fragile site. We audited what was there, kept what worked, and rebuilt the rest — launched in three weeks with zero downtime.">
-          <div class="case-visual" aria-hidden="true">
-            <div class="cv-before"><span>Before</span><div class="cv-shot old"></div></div>
-            <div class="cv-after"><span>After</span><div class="cv-shot new"></div></div>
+          <div class="case-media">
+            <img src="assets/work-responsive-trio.jpg" alt="Responsive website shown on three devices" loading="lazy">
+            <span class="case-num">02</span>
           </div>
           <h3>Professional practice — rescue &amp; rebuild</h3>
-          <ul class="case-outcomes">
+          <p class="case-cat">Rescue &amp; rebuild</p>
+          <p class="case-tag" hidden>Featured</p>
+          <ul class="case-outcomes" hidden>
             <li><strong>3 weeks</strong> from audit to launch</li>
             <li><strong>0</strong> plugin conflicts, 0 downtime</li>
-            <li><strong>2.1&times;</strong> contact-form conversions</li>
+            <li><strong>2.1×</strong> contact-form conversions</li>
           </ul>
-          <p class="case-quote">&ldquo;It felt like hiring a whole web department.&rdquo; <span>— Principal, placeholder testimonial</span></p>
-          <p class="case-open" aria-hidden="true"><span>View case</span><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></p>
         </article>
+        </div>
+      </div>
+      <div class="carousel-bar">
+        <div class="carousel-progress" aria-hidden="true"><span id="workProgress"></span></div>
+        <div class="carousel-arrows">
+          <button type="button" class="car-arrow" id="workPrev" aria-label="Previous projects">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="car-arrow" id="workNext" aria-label="Next projects">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -539,6 +551,6 @@
   </div>
 </div>
 
-<script src="script.js?v=202610101350"></script>
+<script src="script.js?v=202610101355"></script>
 </body>
 </html>
