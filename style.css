@@ -653,8 +653,8 @@ body.menu-open .site-header .header-cta .btn{display:none}
   .hero-channels{left:12px;right:12px;transform:none;flex-wrap:wrap;justify-content:center}
   .hch{min-width:0;flex:1 1 calc(50% - 10px);padding:7px 9px 10px}
   .hch-label{display:none}
-  .hch-gear{top:92px;right:14px}
-  .hero-settings{top:146px;right:12px;left:12px;width:auto}
+  .hch-gear{top:10px;right:14px}
+  .hero-settings{top:64px;right:12px;left:12px;width:auto}
 }
 @media (prefers-reduced-motion:reduce){
   .hch-progress span{transition:none}
